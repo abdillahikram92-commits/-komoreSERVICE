@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> comSERVICE </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ======================================
+         SIDEBAR
+    ======================================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                C
+            </div>
+
+            <div class="brand-text">
+                <strong>comSERVICE</strong>
+                <span>Services locaux</span>
+            </div>
+
+            <button class="close-menu" id="closeMenu">
+                ×
+            </button>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <p class="nav-title">MENU</p>
+
+            <a href="#" class="nav-item">
+                <span>⌂</span>
+                <label>Accueil</label>
+            </a>
+
+            <a href="#" class="nav-item active">
+                <span>＋</span>
+                <label>Nouvelle demande</label>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▣</span>
+                <label>Mes demandes</label>
+                <b></b>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>💬</span>
+                <label>Messages</label>
+                <b></b>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>◷</span>
+                <label>Rendez-vous</label>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>★</span>
+                <label>Favoris</label>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item">
+                <span>⚙</span>
+                <label>Paramètres</label>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>?</span>
+                <label>Aide</label>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ======================================
+         MAIN
+    ======================================= -->
+
+    <main class="main">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="menu-button" id="openMenu">
+                ☰
+            </button>
+
+
+            <div class="top-title">
+
+                <span>Demande</span>
+
+                <strong>
+                    Nouvelle demande
+                </strong>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <button
+                    class="theme-button"
+                    id="themeButton"
+                    title="Changer de thème"
+                >
+                    🌙
+                </button>
+
+                <button class="notification">
+                    🔔
+                    <i></i>
+                </button>
+
+
+                <div class="user">
+
+                    <div class="user-avatar">
+                        MA
+                    </div>
+
+                    <div class="user-details">
+                        <strong>Mon compte</strong>
+                        <span>Client</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ======================================
+             CONTENT
+        ======================================= -->
+
+        <div class="content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="page-header">
+
+                <div>
+
+                    <a href="#" class="back">
+                        ← Retour
+                    </a>
+
+                    <h1>
+                        De quoi avez-vous besoin ?
+                    </h1>
+
+                    <p>
+                        Décrivez votre besoin. Notre équipe
+                        se chargera de trouver le professionnel
+                        le plus adapté.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================
+                 FORM
+            =================================== -->
+
+            <div class="request-layout">
+
+
+                <!-- FORMULAIRE -->
+
+                <section class="form-card">
+
+                    <div class="card-header">
+
+                        <div class="step-circle">
+                            1
+                        </div>
+
+                        <div>
+                            <h2>
+                                Votre besoin
+                            </h2>
+
+                            <p>
+                                Expliquez-nous ce que vous souhaitez faire.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- SERVICE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Quel service recherchez-vous ?
+                            <span>*</span>
+                        </label>
+
+                        <div class="select-wrapper">
+
+                            <select>
+
+                                <option value="">
+                                    Sélectionnez un service
+                                </option>
+
+                                <option>
+                                    🔧 Plomberie
+                                </option>
+
+                                <option>
+                                    ⚡ Électricité
+                                </option>
+
+                                <option>
+                                    ❄️ Climatisation
+                                </option>
+
+                                <option>
+                                    🎨 Peinture
+                                </option>
+
+                                <option>
+                                    🪚 Menuiserie
+                                </option>
+
+                                <option>
+                                    🧹 Nettoyage
+                                </option>
+
+                                <option>
+                                    🔨 Maçonnerie
+                                </option>
+
+                                <option>
+                                    🛠 Autre réparation
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DESCRIPTION -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Décrivez votre problème
+                            <span>*</span>
+                        </label>
+
+                        <textarea
+                            placeholder="Expliquez-nous ce qui doit être fait..."
+                        ></textarea>
+
+                        <small>
+                            Plus votre description est précise,
+                            plus nous pourrons choisir le bon professionnel.
+                        </small>
+
+                    </div>
+
+
+                    <!-- PHOTOS -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Ajouter des photos
+                        </label>
+
+                        <div class="upload">
+
+                            <div class="upload-icon">
+                                📷
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Ajouter des photos
+                                </strong>
+
+                                <p>
+                                    JPG, PNG jusqu'à 10 MB
+                                </p>
+
+                            </div>
+
+                            <button type="button">
+                                Parcourir
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DIVIDER -->
+
+                    <div class="divider"></div>
+
+
+                    <!-- LOCALISATION -->
+
+                    <div class="card-header">
+
+                        <div class="step-circle">
+                            2
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Où se trouve l'intervention ?
+                            </h2>
+
+                            <p>
+                                Cette information nous permet de choisir
+                                un artisan disponible dans votre zone.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Adresse / quartier
+                            <span>*</span>
+                        </label>
+
+                        <div class="input-location">
+
+                            <span>📍</span>
+
+                            <input
+                                type="text"
+                                placeholder="Ex : Moroni, Mtsangani..."
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DISPONIBILITE -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Quand avez-vous besoin du service ?
+                            </label>
+
+                            <select>
+
+                                <option>
+                                    Dès que possible
+                                </option>
+
+                                <option>
+                                    Aujourd'hui
+                                </option>
+
+                                <option>
+                                    Demain
+                                </option>
+
+                                <option>
+                                    Cette semaine
+                                </option>
+
+                                <option>
+                                    Je choisirai une date
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Urgence
+                            </label>
+
+                            <select>
+
+                                <option>
+                                    🟢 Normal
+                                </option>
+
+                                <option>
+                                    🟠 Urgent
+                                </option>
+
+                                <option>
+                                    🔴 Très urgent
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTACT -->
+
+                    <div class="divider"></div>
+
+
+                    <div class="card-header">
+
+                        <div class="step-circle">
+                            3
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Vos coordonnées
+                            </h2>
+
+                            <p>
+                                Pour que notre équipe puisse vous contacter.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Nom complet
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="Votre nom"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Téléphone
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="tel"
+                                placeholder="+269 ..."
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ACTIONS -->
+
+                    <div class="form-actions">
+
+                        <button class="cancel-button">
+                            Annuler
+                        </button>
+
+                        <button class="submit-button">
+                            Envoyer ma demande
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================================
+                     INFO PANEL
+                =================================== -->
+
+                <aside class="info-column">
+
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            💡
+                        </div>
+
+                        <h3>
+                            Comment ça fonctionne ?
+                        </h3>
+
+                        <div class="info-step">
+
+                            <div>
+                                1
+                            </div>
+
+                            <p>
+                                Vous nous décrivez votre besoin.
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-step">
+
+                            <div>
+                                2
+                            </div>
+
+                            <p>
+                                Notre équipe étudie votre demande.
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-step">
+
+                            <div>
+                                3
+                            </div>
+
+                            <p>
+                                Nous sélectionnons le professionnel
+                                le plus adapté et disponible.
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-step">
+
+                            <div>
+                                4
+                            </div>
+
+                            <p>
+                                Nous vous confirmons le professionnel
+                                choisi.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="trust-card">
+
+                        <div class="trust-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Un professionnel choisi pour vous
+                            </strong>
+
+                            <p>
+                                Notre équipe vérifie vos besoins,
+                                les compétences et la disponibilité
+                                de nos professionnels.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- ======================================
+     JAVASCRIPT
+======================================= -->
+
+<script>
+
+    const openMenu =
+        document.getElementById("openMenu");
+
+    const closeMenu =
+        document.getElementById("closeMenu");
+
+    const sidebar =
+        document.getElementById("sidebar");
+
+
+    openMenu.addEventListener("click", () => {
+
+        sidebar.classList.add("open");
+
+    });
+
+
+    closeMenu.addEventListener("click", () => {
+
+        sidebar.classList.remove("open");
+
+    });
+
+
+    const themeButton =
+        document.getElementById("themeButton");
+
+
+    themeButton.addEventListener("click", () => {
+
+        document.body.classList.toggle("dark");
+
+        if (
+            document.body.classList.contains("dark")
+        ) {
+
+            themeButton.textContent = "☀️";
+
+            localStorage.setItem(
+                "theme",
+                "dark"
+            );
+
+        } else {
+
+            themeButton.textContent = "🌙";
+
+            localStorage.setItem(
+                "theme",
+                "light"
+            );
+
+        }
+
+    });
+
+
+    if (
+        localStorage.getItem("theme") === "dark"
+    ) {
+
+        document.body.classList.add("dark");
+
+        themeButton.textContent = "☀️";
+
+    }
+
+</script>
+
+</body>
+</html>
