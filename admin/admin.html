@@ -1,0 +1,1449 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Demandes - Administration </title>
+
+    <link
+        rel="stylesheet"
+        href="style_comSERVICE_final.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- ======================================
+         SIDEBAR
+    ======================================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                C
+            </div>
+
+            <div class="brand-text">
+
+                <strong>
+                    comSERVICE
+                </strong>
+
+                <span>
+                    Administration
+                </span>
+
+            </div>
+
+            <button
+                class="close-menu"
+                id="closeMenu"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <p class="nav-title">
+                ADMINISTRATION
+            </p>
+
+
+            <a href="#" class="nav-item">
+
+                <span>⌂</span>
+
+                <label>
+                    Tableau de bord
+                </label>
+
+            </a>
+
+
+            <a
+                href="#"
+                class="nav-item active"
+            >
+
+                <span>▣</span>
+
+                <label>
+                    Demandes
+                </label>
+
+                <b>7</b>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <span>👨‍🔧</span>
+
+                <label>
+                    Professionnels
+                </label>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <span>👥</span>
+
+                <label>
+                    Clients
+                </label>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <span>📅</span>
+
+                <label>
+                    Rendez-vous
+                </label>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <span>💬</span>
+
+                <label>
+                    Messages
+                </label>
+
+                <b>4</b>
+
+            </a>
+
+
+            <p class="nav-title second">
+                GESTION
+            </p>
+
+
+            <a href="#" class="nav-item">
+
+                <span>★</span>
+
+                <label>
+                    Évaluations
+                </label>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <span>📊</span>
+
+                <label>
+                    Rapports
+                </label>
+
+            </a>
+
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item">
+
+                <span>⚙</span>
+
+                <label>
+                    Paramètres
+                </label>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <span>?</span>
+
+                <label>
+                    Aide
+                </label>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ======================================
+         MAIN
+    ======================================= -->
+
+    <main class="main">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+
+            <button
+                class="menu-button"
+                id="openMenu"
+            >
+                ☰
+            </button>
+
+
+            <div class="top-title">
+
+                <span>
+                    
+                </span>
+
+                <strong>
+                    Gestion des demandes
+                </strong>
+
+            </div>
+
+
+            <div class="top-actions">
+
+
+                <button
+                    class="theme-button"
+                    id="themeButton"
+                >
+                    🌙
+                </button>
+
+
+                <button class="notification">
+
+                    🔔
+
+                    <i></i>
+
+                </button>
+
+
+                <div class="user">
+
+                    <div class="user-avatar">
+                        Z
+                    </div>
+
+                    <div class="user-details">
+
+                        <strong>
+                            Administrateur
+                        </strong>
+
+                        <span>
+                            Équipe comSERVICE
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ======================================
+             CONTENT
+        ======================================= -->
+
+        <div class="content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="page-header">
+
+                <div>
+
+                    <span class="breadcrumb">
+                        Administration / Demandes
+                    </span>
+
+                    <h1>
+                        Demandes clients
+                    </h1>
+
+                    <p>
+                        Analysez les demandes et faites un chois selon la disponibilite de nos expert.
+                    </p>
+
+                </div>
+
+
+                <button class="refresh-button">
+                    ↻ Actualiser
+                </button>
+
+            </div>
+
+
+            <!-- ==================================
+                 STATISTICS
+            =================================== -->
+
+            <div class="stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        ▣
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Nouvelles demandes
+                        </span>
+
+                        <strong>
+                            0
+                        </strong>
+
+                        <small class="up">
+                            
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ◷
+                    </div>
+
+                    <div>
+
+                        <span>
+                            En attente
+                        </span>
+
+                        <strong>
+                            
+                        </strong>
+
+                        <small>
+                            
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Assignées aujourd'hui
+                        </span>
+
+                        <strong>
+                            
+                        </strong>
+
+                        <small>
+                            
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        👨‍🔧
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Artisans disponibles
+                        </span>
+
+                        <strong>
+                            
+                        </strong>
+
+                        <small class="up">
+                            
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================
+                 REQUESTS SECTION
+            =================================== -->
+
+            <section class="requests-panel">
+
+
+                <!-- PANEL HEADER -->
+
+                <div class="panel-header">
+
+
+                    <div>
+
+                        <h2>
+                            Demandes à traiter
+                        </h2>
+
+                        <span>
+                            Sélectionnez une demande pour
+                            trouver le professionnel adapté.
+                        </span>
+
+                    </div>
+
+
+                    <div class="panel-actions">
+
+                        <div class="search">
+
+                            <span>
+                                🔎
+                            </span>
+
+                            <input
+                                type="search"
+                                placeholder="Rechercher..."
+                            >
+
+                        </div>
+
+
+                        <select class="filter">
+
+                            <option>
+                                Toutes
+                            </option>
+
+                            <option>
+                                Nouvelles
+                            </option>
+
+                            <option>
+                                En attente
+                            </option>
+
+                            <option>
+                                Assignées
+                            </option>
+
+                            <option>
+                                Urgentes
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                     REQUEST LIST
+                =================================== -->
+
+                <div class="request-list">
+
+
+                    <!-- REQUEST 1 -->
+
+                    <article
+                        class="request-card selected"
+                    >
+
+                        <div class="request-main">
+
+
+                            <div class="request-id">
+                                #PA-1048
+                            </div>
+
+
+                            <div class="request-content">
+
+                                <div class="request-title">
+
+                                    <h3>
+                                        Fuite d'eau sous l'évier
+                                    </h3>
+
+                                    <span class="urgent">
+                                        Urgent
+                                    </span>
+
+                                </div>
+
+
+                                <p class="request-description">
+
+                                    Le client signale une fuite
+                                    importante sous l'évier de
+                                    sa cuisine.
+
+                                </p>
+
+
+                                <div class="request-meta">
+
+                                    <span>
+                                        🔧 Plomberie
+                                    </span>
+
+                                    <span>
+                                        📍 Moroni
+                                    </span>
+
+                                    <span>
+                                        🕐 Aujourd'hui, 14h00
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="request-status">
+
+                                <span class="status new">
+                                    Nouvelle
+                                </span>
+
+                                <small>
+                                    Il y a 12 min
+                                </small>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="request-footer">
+
+                            <span>
+                                👤 Mohamed Ali
+                            </span>
+
+                            <span>
+                                📞 +269 *** ** **
+                            </span>
+
+
+                            <button
+                                class="view-button"
+                                onclick="selectRequest('PA-1048')"
+                            >
+                                Examiner →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- REQUEST 2 -->
+
+                    <article class="request-card">
+
+                        <div class="request-main">
+
+                            <div class="request-id">
+                                #PA-1047
+                            </div>
+
+
+                            <div class="request-content">
+
+                                <div class="request-title">
+
+                                    <h3>
+                                        Installation électrique
+                                    </h3>
+
+                                    <span class="normal">
+                                        Normal
+                                    </span>
+
+                                </div>
+
+
+                                <p class="request-description">
+
+                                    Installation de prises électriques
+                                    dans une nouvelle pièce.
+
+                                </p>
+
+
+                                <div class="request-meta">
+
+                                    <span>
+                                        ⚡ Électricité
+                                    </span>
+
+                                    <span>
+                                        📍 Mtsangani
+                                    </span>
+
+                                    <span>
+                                        🕐 Demain
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="request-status">
+
+                                <span class="status new">
+                                    Nouvelle
+                                </span>
+
+                                <small>
+                                    Il y a 35 min
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="request-footer">
+
+                            <span>
+                                👤 Salim Mohamed
+                            </span>
+
+                            <span>
+                                📞 +269 *** ** **
+                            </span>
+
+
+                            <button class="view-button" onclick="selectRequest('PA-1047')">
+                                Examiner →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- REQUEST 3 -->
+
+                    <article class="request-card">
+
+                        <div class="request-main">
+
+                            <div class="request-id">
+                                #PA-1046
+                            </div>
+
+
+                            <div class="request-content">
+
+                                <div class="request-title">
+
+                                    <h3>
+                                        Climatisation en panne
+                                    </h3>
+
+                                    <span class="urgent">
+                                        Urgent
+                                    </span>
+
+                                </div>
+
+
+                                <p class="request-description">
+
+                                    La climatisation ne fonctionne
+                                    plus depuis hier soir.
+
+                                </p>
+
+
+                                <div class="request-meta">
+
+                                    <span>
+                                        ❄️ Climatisation
+                                    </span>
+
+                                    <span>
+                                        📍 Iconi
+                                    </span>
+
+                                    <span>
+                                        🕐 Aujourd'hui
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="request-status">
+
+                                <span class="status waiting">
+                                    En attente
+                                </span>
+
+                                <small>
+                                    Il y a 1h
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="request-footer">
+
+                            <span>
+                                👤 Amina Abdallah
+                            </span>
+
+                            <span>
+                                📞 +269 *** ** **
+                            </span>
+
+
+                            <button class="view-button" onclick="selectRequest('PA-1046')">
+                                Examiner →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- REQUEST 4 -->
+
+                    <article class="request-card">
+
+                        <div class="request-main">
+
+                            <div class="request-id">
+                                #PA-1045
+                            </div>
+
+
+                            <div class="request-content">
+
+                                <div class="request-title">
+
+                                    <h3>
+                                        Peinture intérieure
+                                    </h3>
+
+                                    <span class="normal">
+                                        Normal
+                                    </span>
+
+                                </div>
+
+
+                                <p class="request-description">
+
+                                    Peinture complète d'un salon
+                                    et d'une chambre.
+
+                                </p>
+
+
+                                <div class="request-meta">
+
+                                    <span>
+                                        🎨 Peinture
+                                    </span>
+
+                                    <span>
+                                        📍 Moroni
+                                    </span>
+
+                                    <span>
+                                        🕐 Cette semaine
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="request-status">
+
+                                <span class="status waiting">
+                                    En attente
+                                </span>
+
+                                <small>
+                                    Il y a 2h
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="request-footer">
+
+                            <span>
+                                👤 Ahmed Said
+                            </span>
+
+                            <span>
+                                📞 +269 *** ** **
+                            </span>
+
+
+                            <button class="view-button" onclick="selectRequest('PA-1045')">
+                                Examiner →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- PAGINATION -->
+
+                <div class="pagination">
+
+                    <span>
+                        1–4 sur 7 demandes
+                    </span>
+
+                    <div>
+
+                        <button disabled>
+                            ←
+                        </button>
+
+                        <button class="active">
+                            1
+                        </button>
+
+                        <button>
+                            2
+                        </button>
+
+                        <button>
+                            →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- ======================================
+     JAVASCRIPT
+======================================= -->
+
+
+<!-- ======================================
+     REQUEST DETAILS MODAL
+======================================= -->
+<div class="request-modal" id="requestModal" aria-hidden="true">
+    <div class="request-modal-overlay" onclick="closeRequestModal()"></div>
+
+    <div class="request-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="request-modal-header">
+            <div>
+                <span class="modal-kicker">DÉTAIL DE LA DEMANDE</span>
+                <h2 id="modalTitle">Demande</h2>
+               l  <span class="modal-request-id" id="modalRequestId">#PA-1048</span>
+            </div>
+            <button class="modal-close" onclick="closeRequestModal()" aria-label="Fermer">×</button>
+        </div>
+
+        <div class="request-modal-body">
+            <div class="modal-request-summary">
+                <div class="modal-status" id="modalStatus">Nouvelle</div>
+                <span id="modalPriority">Urgent</span>
+            </div>
+
+            <div class="modal-grid">
+                <div class="modal-section">
+                    <h3>📋 Informations</h3>
+                    <p><strong>Client :</strong> <span id="modalClient"></span></p>
+                    <p><strong>Téléphone :</strong> <span id="modalPhone"></span></p>
+                    <p><strong>Service :</strong> <span id="modalService"></span></p>
+                    <p><strong>Localisation :</strong> <span id="modalLocation"></span></p>
+                    <p><strong>Date souhaitée :</strong> <span id="modalDate"></span></p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>📝 Description</h3>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+
+            <div class="modal-section professionals-section">
+                <div class="professionals-heading">
+                    <div>
+                        <h3>👨‍🔧 Professionnels disponibles</h3>
+                        <p>Choisissez un professionnel compatible avec cette demande.</p>
+                    </div>
+                    <span class="available-count">3 disponibles</span>
+                </div>
+
+                <div class="professional-list">
+                    <article class="professional-card">
+                        <div class="professional-avatar">A</div>
+                        <div class="professional-info">
+                            <strong>Ali Ahmed</strong>
+                            <span>Plombier • Moroni</span>
+                            <small>Disponible maintenant</small>
+                        </div>
+                        <button class="assign-button" onclick="assignProfessional('Ali Ahmed')">
+                            Assigner
+                        </button>
+                    </article>
+
+                    <article class="professional-card">
+                        <div class="professional-avatar">S</div>
+                        <div class="professional-info">
+                            <strong>Saïd Madi</strong>
+                            <span>Plombier • Mtsangani</span>
+                            <small>Disponible à 15h30</small>
+                        </div>
+                        <button class="assign-button" onclick="assignProfessional('Saïd Madi')">
+                            Assigner
+                        </button>
+                    </article>
+
+                    <article class="professional-card">
+                        <div class="professional-avatar">M</div>
+                        <div class="professional-info">
+                            <strong>Mohamed Youssouf</strong>
+                            <span>Technicien • Iconi</span>
+                            <small>Disponible aujourd'hui</small>
+                        </div>
+                        <button class="assign-button" onclick="assignProfessional('Mohamed Youssouf')">
+                            Assigner
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* ======================================
+   REQUEST DETAILS MODAL
+======================================= */
+
+.request-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.request-modal.open {
+    display: flex;
+}
+
+.request-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 15, 30, .62);
+    backdrop-filter: blur(4px);
+}
+
+.request-modal-card {
+    position: relative;
+    width: min(900px, 100%);
+    max-height: 90vh;
+    overflow: auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 24px 80px rgba(0,0,0,.25);
+    animation: modalIn .2s ease-out;
+}
+
+@keyframes modalIn {
+    from { opacity: 0; transform: translateY(15px) scale(.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.request-modal-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px 28px 20px;
+    border-bottom: 1px solid #e9edf3;
+}
+
+.modal-kicker {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    opacity: .65;
+}
+
+.request-modal-header h2 {
+    margin: 5px 0 3px;
+    font-size: 25px;
+}
+
+.modal-request-id {
+    font-size: 13px;
+    opacity: .6;
+}
+
+.modal-close {
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 10px;
+    background: #f1f3f6;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.request-modal-body {
+    padding: 25px 28px 30px;
+}
+
+.modal-request-summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.modal-status,
+#modalPriority {
+    display: inline-flex;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.modal-status {
+    background: #eaf2ff;
+    color: #2563eb;
+}
+
+#modalPriority {
+    background: #fff0df;
+    color: #d97706;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.modal-section {
+    padding: 19px;
+    border: 1px solid #e8ebf0;
+    border-radius: 14px;
+    background: #fafbfc;
+}
+
+.modal-section h3 {
+    margin: 0 0 14px;
+    font-size: 15px;
+}
+
+.modal-section p {
+    margin: 9px 0;
+    line-height: 1.55;
+    font-size: 14px;
+}
+
+.professionals-section {
+    margin-top: 18px;
+}
+
+.professionals-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.professionals-heading h3 {
+    margin-bottom: 4px;
+}
+
+.professionals-heading p {
+    margin: 0;
+    opacity: .65;
+}
+
+.available-count {
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px 10px;
+    border-radius: 20px;
+    background: #e9f8ef;
+    color: #15803d;
+}
+
+.professional-list {
+    display: grid;
+    gap: 10px;
+}
+
+.professional-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 13px;
+    border: 1px solid #e5e8ed;
+    border-radius: 12px;
+    background: white;
+}
+
+.professional-avatar {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    border-radius: 50%;
+    background: #eef2ff;
+    font-weight: 800;
+}
+
+.professional-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 3px;
+}
+
+.professional-info strong {
+    font-size: 14px;
+}
+
+.professional-info span,
+.professional-info small {
+    font-size: 12px;
+    opacity: .65;
+}
+
+.assign-button {
+    border: 0;
+    padding: 9px 13px;
+    border-radius: 9px;
+    background: #2563eb;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.assign-button:hover {
+    opacity: .88;
+}
+
+@media (max-width: 700px) {
+    .request-modal {
+        padding: 10px;
+    }
+
+    .request-modal-card {
+        max-height: 95vh;
+        border-radius: 15px;
+    }
+
+    .modal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .professionals-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .professional-card {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .assign-button {
+        margin-left: 55px;
+    }
+}
+
+/* Dark mode */
+body.dark .request-modal-card {
+    background: #151922;
+    color: #edf1f7;
+}
+
+body.dark .request-modal-header {
+    border-color: #2a303c;
+}
+
+body.dark .modal-close,
+body.dark .modal-section {
+    background: #1c212c;
+    border-color: #2a303c;
+    color: #edf1f7;
+}
+
+body.dark .professional-card {
+    background: #181d27;
+    border-color: #2a303c;
+}
+</style>
+
+<script>
+
+    const openMenu =
+        document.getElementById("openMenu");
+
+    const closeMenu =
+        document.getElementById("closeMenu");
+
+    const sidebar =
+        document.getElementById("sidebar");
+
+
+    openMenu.addEventListener(
+        "click",
+        () => {
+
+            sidebar.classList.add("open");
+
+        }
+    );
+
+
+    closeMenu.addEventListener(
+        "click",
+        () => {
+
+            sidebar.classList.remove("open");
+
+        }
+    );
+
+
+    /* ===============================
+       THEME
+    =============================== */
+
+    const themeButton =
+        document.getElementById("themeButton");
+
+
+    themeButton.addEventListener(
+        "click",
+        () => {
+
+            document.body.classList.toggle("dark");
+
+
+            if (
+                document.body.classList.contains("dark")
+            ) {
+
+                themeButton.textContent = "☀️";
+
+                localStorage.setItem(
+                    "theme",
+                    "dark"
+                );
+
+            } else {
+
+                themeButton.textContent = "🌙";
+
+                localStorage.setItem(
+                    "theme",
+                    "light"
+                );
+
+            }
+
+        }
+    );
+
+
+    if (
+        localStorage.getItem("theme") === "dark"
+    ) {
+
+        document.body.classList.add("dark");
+
+        themeButton.textContent = "☀️";
+
+    }
+
+
+    /* ===============================
+       REQUEST SELECTION
+    =============================== */
+
+    const requestsData = {
+        "PA-1048": {
+            title: "Fuite d'eau sous l'évier",
+            priority: "Urgent",
+            status: "Nouvelle",
+            client: "Mohamed Ali",
+            phone: "+269 *** ** **",
+            service: "Plomberie",
+            location: "Moroni",
+            date: "Aujourd'hui, 14h00",
+            description: "Le client signale une fuite importante sous l'évier de sa cuisine."
+        },
+        "PA-1047": {
+            title: "Installation électrique",
+            priority: "Normal",
+            status: "Nouvelle",
+            client: "Salim Mohamed",
+            phone: "+269 *** ** **",
+            service: "Électricité",
+            location: "Mtsangani",
+            date: "Demain",
+            description: "Installation de prises électriques dans une nouvelle pièce."
+        },
+        "PA-1046": {
+            title: "Climatisation en panne",
+            priority: "Urgent",
+            status: "En attente",
+            client: "Amina Abdallah",
+            phone: "+269 *** ** **",
+            service: "Climatisation",
+            location: "Iconi",
+            date: "Aujourd'hui",
+            description: "La climatisation ne fonctionne plus depuis hier soir."
+        },
+        "PA-1045": {
+            title: "Peinture intérieure",
+            priority: "Normal",
+            status: "En attente",
+            client: "Ahmed Said",
+            phone: "+269 *** ** **",
+            service: "Peinture",
+            location: "Moroni",
+            date: "Cette semaine",
+            description: "Peinture complète d'un salon et d'une chambre."
+        }
+    };
+
+    function selectRequest(id) {
+        const request = requestsData[id];
+
+        if (!request) {
+            console.error("Demande introuvable :", id);
+            return;
+        }
+
+        document.getElementById("modalTitle").textContent = request.title;
+        document.getElementById("modalRequestId").textContent = "#" + id;
+        document.getElementById("modalStatus").textContent = request.status;
+        document.getElementById("modalPriority").textContent = request.priority;
+        document.getElementById("modalClient").textContent = request.client;
+        document.getElementById("modalPhone").textContent = request.phone;
+        document.getElementById("modalService").textContent = request.service;
+        document.getElementById("modalLocation").textContent = request.location;
+        document.getElementById("modalDate").textContent = request.date;
+        document.getElementById("modalDescription").textContent = request.description;
+
+        const modal = document.getElementById("requestModal");
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeRequestModal() {
+        const modal = document.getElementById("requestModal");
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+    }
+
+    function assignProfessional(name) {
+        alert("Demande assignée à " + name + " (prototype).");
+    }
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeRequestModal();
+        }
+    });
+
+</script>
+
+</body>
+</html>
